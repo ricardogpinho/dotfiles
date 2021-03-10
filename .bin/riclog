@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+#ssh hexonline 'echo -e "##$(date)\n$1\n\n" >> ~/gemini/minilog.gmi'
+
+[ -z "$1" ] && exit
+sed -i "4i### $(date +'%a %d %b, %H:%M')\n$1\n" ~/gemini/capsule/minilog.gmi &&
+
+#sync with raspberry pi
+rsync -aP ~/gemini/capsule pi@raspberrypi.local:~/gemini
+
+#update repo
+cd /home/ricardo/gemini/capsule && git add . && git commit -m "add minilog entry" && git push origin master

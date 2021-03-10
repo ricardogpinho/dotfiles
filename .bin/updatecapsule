@@ -1,0 +1,4 @@
+# rsync here is syncing the whole directory 'capsule' to '/gemini'. A best option would be to sync 'capsule/' to 'gemini/capsule/' to
+# sync the contents of capsule instead of the directory itself
+rsync -aP ~/gemini/capsule pi@raspberrypi.local:~/gemini
+cd /home/ricardo/gemini/capsule && git add . && git commit -m "general capsule update" && git push origin master

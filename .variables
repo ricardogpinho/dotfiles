@@ -1,0 +1,17 @@
+#!bin/bash
+# variables
+#
+
+# computer network names
+
+# ASUS F3Se
+ASUS_F3Se_HOSTNAME="ricardo-F3Se.local"
+ASUS_F3Se_USERNAME="ricardo"
+
+# ASUS K52JB
+ASUS_K2JB_HOSTNAME="ricardo.local"
+ASUS_K2JB_USERNAME="ricardo"
+
+# Raspberry Pi
+RPI_HOSTNAME="raspberrypi.local"
+RPI_USERNAME="pi"
