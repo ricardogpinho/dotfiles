@@ -6,12 +6,13 @@ alias sshf3s="ssh ${ASUS_F3Se_USERNAME}@${ASUS_F3Se_HOSTNAME}"
 alias sshpi="ssh ${RPI_USERNAME}@${RPI_HOSTNAME}"
 
 alias r=ranger
+alias vim=nvim
+alias vi=nvim
+
 alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
-
-
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB

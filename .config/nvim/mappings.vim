@@ -33,3 +33,7 @@ nnoremap <C-c> <Esc>
 
 " Fuzzy find for files
 nnoremap <C-p>  :FZF<CR>
+
+" Move selected line / block of text in visual mode
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
