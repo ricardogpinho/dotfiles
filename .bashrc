@@ -8,6 +8,7 @@
 [ -r $HOME/.functions ] && source $HOME/.functions || echo "couldn't fund .functions"
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
+[ -r /usr/share/bash-completion/completions/git ] && . /usr/share/bash-completion/completions/git
 
 # Change the window title of X terminals
 case ${TERM} in
