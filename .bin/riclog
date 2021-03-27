@@ -5,7 +5,10 @@
 sed -i "4i### $(date +'%a %d %b, %H:%M')\n$1\n" ~/gemini/capsule/minilog.gmi &&
 
 #sync with raspberry pi
-rsync -aP ~/gemini/capsule pi@raspberrypi.local:~/gemini &&
+# try to sync localy
+rsync -aP ~/gemini/capsule pi@raspberrypi.local:~/gemini || 
+# try to sync over the internet
+rsync -aP -e 'ssh -p 3141' ~/gemini/capsule pi@ricardogpt.ddnsfree.com:~/gemini &&
 
 #update repo
 cd /home/ricardo/gemini/capsule && git add . && git commit -m "add minilog entry" && git push origin master
