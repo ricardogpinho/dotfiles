@@ -9,6 +9,9 @@ alias r=ranger
 alias vim=nvim
 alias vi=nvim
 
+# copy to clipboard quickly
+alias x="xsel -b"
+
 alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
