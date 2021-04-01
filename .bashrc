@@ -90,3 +90,6 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+if [ -f "/home/ricardo/.config/lf/lfcd.sh" ]; then
+    source "/home/ricardo/.config/lf/lfcd.sh"
+fi
