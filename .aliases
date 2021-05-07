@@ -8,7 +8,7 @@ alias sshpi="ssh ${RPI_USERNAME}@${RPI_HOSTNAME}"
 alias r=ranger
 alias vim=nvim
 alias vi=nvim
-
+alias open="xdg-open"
 # copy to clipboard quickly
 alias x="xsel -b"
 
