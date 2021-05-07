@@ -1,1 +1,14 @@
+# Basic Settings
+set info size
+set drawbox
+
+# Mappings
 map . set hidden!
+map md mkdir
+
+# Custom Functions
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
