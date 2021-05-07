@@ -92,4 +92,7 @@ shopt -s histappend
 
 if [ -f "/home/ricardo/.config/lf/lfcd.sh" ]; then
     source "/home/ricardo/.config/lf/lfcd.sh"
+    bind '"\C-o":"lfcd\C-m"'  # bash
 fi
+
+source /home/ricardo/.config/broot/launcher/bash/br
