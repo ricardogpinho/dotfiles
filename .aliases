@@ -2,9 +2,6 @@
 # aliases
 #
 
-alias sshf3s="ssh ${ASUS_F3Se_USERNAME}@${ASUS_F3Se_HOSTNAME}"
-alias sshpi="ssh ${RPI_USERNAME}@${RPI_HOSTNAME}"
-
 alias r=ranger
 alias vim=nvim
 alias vi=nvim
